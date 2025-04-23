@@ -1,6 +1,6 @@
 # Console-Based Strategy Game (X/O Duel)
 
-This is a console-based Python game where two players (or one player and the computer) compete by placing X and O pieces on a customizable board. Each player has unique placement rules, and the game ends when no more valid moves are possible.
+This is a console-based Python game where two players (or one player and the computer) compete by placing X and O pieces on a customizable board. Each player has unique placement rules, and the game ends when no more valid moves are possible. Designed to demonstrate strategic thinking and algorithm design.
 
 ## Features
 
@@ -58,11 +58,9 @@ The computer opponent uses a basic **Minimax** strategy with depth-limited searc
 
 ## Author
 
-Made with logic and Python. Designed to demonstrate strategic thinking and algorithm design.
-Teodora Zlatanovic
-Computer Science graduate specializing in software development, based in Serbia.
-
-GitHub: github.com/TeodoraZ98
+Teodora Zlatanovic  
+Computer Science graduate specializing in software development, based in Serbia.  
+GitHub: [github.com/TeodoraZ98](https://github.com/TeodoraZ98)
 
 
 
