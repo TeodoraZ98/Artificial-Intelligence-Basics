@@ -1,67 +1,67 @@
-```markdown
-# Artificial Intelligence Basics
+# Console-Based Strategy Game (X/O Duel)
 
-This project is a simple turn-based strategic game implemented in Python that simulates a grid-based board game between two players (X and O). It also features a basic AI using the Minimax algorithm with alpha-beta pruning for the computer opponent. The game includes rule validation, board visualization, and gameplay between human vs. human or human vs. computer.
+This is a console-based Python game where two players (or one player and the computer) compete by placing X and O pieces on a customizable board. Each player has unique placement rules, and the game ends when no more valid moves are possible.
 
-## Project Highlights
+## 📋 Features
 
-- Grid-based board game engine
-- Human vs Human or Human vs Computer gameplay
-- AI opponent with Minimax and alpha-beta pruning
-- Move validation and input handling
-- Dynamic board rendering in the terminal
+- 🎮 Player vs Player and Player vs Computer modes
+- 📏 Customizable board size (minimum 4x4)
+- 🤖 Basic AI with Minimax algorithm for computer opponent
+- ✅ Move validation and automatic board display after each turn
+- 📉 Evaluation function for game state estimation
 
-## Game Rules
+## 🧠 Game Rules
 
-- The board is a grid defined by user input (minimum 4x4).
-- Player X places tiles vertically, occupying two rows in the same column.
-- Player O places tiles horizontally, occupying two columns in the same row.
-- The game alternates turns between players until no legal moves remain.
+- The board consists of cells, each starting as `None`.
+- Player **X** (0) places their piece in two vertically stacked cells.
+- Player **O** (1) places their piece in two horizontally adjacent cells.
+- A move is invalid if:
+  - It goes outside the board.
+  - It overlaps with another piece.
+- The game ends when no valid moves are left for the current player.
 
-## Features
+## 🛠 How to Run
 
-- Input validation to prevent moves outside the board or on occupied cells
-- Automatic turn switching and board updates
-- Victory check and game-end detection
-- AI decision-making up to 3 levels of depth
-- Console-based board display for intuitive tracking
+1. Clone the repository or copy the code into a `.py` file:
+    ```bash
+    python game.py
+    ```
 
-## How to Run
+2. Follow the prompts:
+    - Enter board dimensions (minimum 4x4).
+    - Choose the first player (`0` for X, `1` for O).
+    - Choose game mode: `0` for PvP or `1` for PvC.
 
-1. Clone the repository:
+## 💡 AI Strategy
 
-   ```bash
-   git clone https://github.com/TeodoraZ98/Artificial-Intelligence-Basics.git
-   cd Artificial-Intelligence-Basics
-   ```
+The computer opponent uses a basic **Minimax** strategy with depth-limited search to evaluate and select optimal moves. The evaluation function is designed to assess available valid moves for both X and O and estimate the board state accordingly.
 
-2. Run the game:
+## 📦 Project Structure
 
-   ```bash
-   python game.py
-   ```
+- `startGame()` — Entry point for setting up the game.
+- `provera()` — Validates if a move is within bounds and allowed.
+- `Upisi()` — Handles move input and updates the board.
+- `CovekProtivRacunara()` — Handles gameplay against AI.
+- `max_value()` / `min_value()` — Core of the Minimax algorithm.
+- `showTable()` — Prints the current state of the board.
 
-   *(Make sure the code is saved in a file like `game.py`.)*
+## 🚧 Limitations
 
-3. Follow the prompts in the terminal to select board size, players, and start playing.
+- No GUI; purely console-based.
+- Basic AI; not optimized for high-level play.
+- No save/load feature for game state.
 
-## Technologies Used
+## 📌 Requirements
 
-- Python 3
-- Standard Python libraries (no external dependencies)
+- Python 3.x
+- No external libraries required
 
-## Potential Improvements
+## 🧑‍💻 Author
 
-- GUI using Tkinter or Pygame
-- Adjustable AI difficulty levels
-- Multiplayer over network
-- Enhanced evaluation functions for AI scoring
+Made with logic and Python. Designed to demonstrate strategic thinking and algorithm design.
+Teodora Zlatanovic
+Computer Science graduate specializing in software development, based in Serbia.
+GitHub: github.com/TeodoraZ98
 
-## Author
-
-Teodora Zlatanovic  
-Computer Science graduate focused on software development and artificial intelligence.  
-GitHub: [github.com/TeodoraZ98](https://github.com/TeodoraZ98)
-```
 
 
