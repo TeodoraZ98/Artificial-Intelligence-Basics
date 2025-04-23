@@ -61,6 +61,7 @@ The computer opponent uses a basic **Minimax** strategy with depth-limited searc
 Made with logic and Python. Designed to demonstrate strategic thinking and algorithm design.
 Teodora Zlatanovic
 Computer Science graduate specializing in software development, based in Serbia.
+
 GitHub: github.com/TeodoraZ98
 
 
